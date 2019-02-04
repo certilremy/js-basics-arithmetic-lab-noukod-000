@@ -22,15 +22,7 @@ describe('index.js', function () {
     });
   });
 
-  describe('randomNumber', function () {
-    it('contains a random number greater than or equal to 0 and less than 20', function () {
-      expect(randomNumber).to.be.at.least(0).but.below(20);
-    });
 
-    it("invokes 'Math.random()'", function () {
-      expect(spyOnMathRandom.calledOnce).to.be.true;
-    });
-  });
 
   describe('randomInteger', function () {
     it("contains the value of 'randomNumber' rounded down to the nearest integer", function () {
